@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+https://www.linkedin.com/in/antoniotrento/
+https://twitter.com/lantoniotrento
+lantoniotrento@gmail.com
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include google blocks from _includes/JB/ -->
+    {% if site.google.tracking_id %}
+      {% include JB/analytics.html %}
+    {% endif %}
+    {% if site.google.ad_client %}
+      {% include JB/ad-block.html %}
+    {% endif %}
+    <!-- END Include google blocks from _includes/JB/ -->
+
+    <!-- CSS loaded by the children page -->
+    {% if page.css %}<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/css/{{ page.css }}" />{% endif %}
+      <meta name="theme-color" content="#0067F4" />
+	    <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.favicon }}" type="image/x-icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	    <!-- main css -->
+	    <link href="{{ site.url }}{{ site.baseurl }}/assets/css/main-demo.css?v=1.0.2" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/prism.css">
+
+      {% if page.custom-head %}
+        {{ page.custom-head }}
+      {% endif %}
+
+<!-- block for amp-jekyll plugin -->
+      {% if page.path contains '_posts' %}
+        {% unless page.skip_amp %}
+          <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
+        {% endunless %}
+      {% endif %}
+<!-- block for amp-jekyll plugin -->      
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+    <link href="{{ site.url }}{{ site.baseurl }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ site.url }}{{ site.baseurl }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <!-- Google ADS mobile block-->
+
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '509727322725898',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- ProofLeads embed code -->
+<script type="text/javascript">
+var proofLeads = proofLeads || {}; proofLeads.key = "KEildFcxsykmIHPP"; proofLeads.domain = "jorigamy.github.io"; proofLeads.interval = "15000"; proofLeads.blinkDuration = "5000";
+(function() {
+var pl = document.createElement("script"), script = document.getElementsByTagName("script")[0];
+pl.type = "text/javascript"; pl.async = true; pl.src = "https://app.proofleads.com/api/proofleads-embed/irtUXtqrKNxT.js";
+script.parentNode.insertBefore(pl, script);
+})();
+</script>
+<!-- End of ProofLeads embed code -->
+</head>
+<body data-gr-c-s-loaded="true">
+  <!-- Include tag manager blocks from _includes/JB/ -->
+    {% if site.google.tagmanager_id == true %}
+      {% include JB/tag-manager-body.html %}
+    {% endif %}
+
+    <div class="loader">
+        <div class="page-loader"></div>
+    </div>
+    {% include themes/nav-bar.html %}
+      {{ content }}
+    {% include themes/footer.html %}
+
+    
+<div class="modal fade text-center" id="donate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="color:black!important;" class="modal-title" id="exampleModalLabel">Donate ⛑❤️ Scan QR or copy address:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <div><p style="color:black!important;">Scan this QR or copy the wallet address below:</p><p><img class="image-fluid" src='https://jorigamy.github.io/assets/images/qrcode-bitcoin.png' /></p><p><input style="color:black!important;" type="text" id="address" value="1Du9FqyqdWANstXEict6w6oWVJvaBKnDeg"> <a onclick="copyaddress() " class="badge mr-3 badge-squared badge-outline-info">Copy</a></p></div>
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-6 text-center">
+                          <style>.bmc-button img{box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{text-decoration: none !important;display:inline-block !important;padding:5px 10px !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;font-size: 26px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;-webkit-transition: 0.3s all linear !important;transition: 0.3s all linear !important;margin: 0 auto !important;font-family:"Cookie", cursive !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0 4px 16px 0 rgba(190, 190, 190,.45) !important;text-decoration: none !important;box-shadow: 0 4px 16px 0 rgba(190, 190, 190,.45) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/giXMFWT"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt=""><span style="margin-left:5px">Buy me a coffee</span></a>
+                      </div>
+                      <div class="col-md-6 text-center">
+                          <a target="blank" class="btn btn-outline-primary" href="https://steemit.com/utopian-io/@antoniotrento/dev-together-jorigamy" role="button"><i class="fa fa-comments-o mr-1"></i> Share on steemit</a>  
+                      </div>
+                  </div>
+              </div>               
+            </div>            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times-circle-o mr-1"></i> Back</button>
+                <button type="button" class="btn btn-success" onclick="copyaddress() "><i class="fa fa-clone mr-1"></i> Copy it</button>
+                <script>function shapeshift_click(a,e){e.preventDefault();var link=a.href;window.open(link,'1418115287605','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=0,left=0,top=0');return false;}</script> <a onclick="shapeshift_click(this, event);" class="btn btn-outline-success" href="https://shapeshift.io/shifty.html?destination=1Du9FqyqdWANstXEict6w6oWVJvaBKnDeg&amp;output=BTC&amp;apiKey=becba131200462b1f13eeab526bee59a146960222f4bcc8191c837d2b3bee5d3687690a67d2a43ebb03c9c58c03bf99f4877fa2f04f3e72615af930ce2d4579f"><i class="fa fa-money mr-1"></i> Altcoins</a>
+                
+            </div>
+            <script> 
+                function copyaddress() {
+                var copyText = document.getElementById('address');    
+                
+                copyText.select();
+                document.execCommand("Copy"); 
+                $(copyText).select();                                                                                                       
+                }                                                    
+            </script>
+                     
+        </div>
+    </div>
+</div>
+
+
+
+      <script async defer="defer" src="https://buttons.github.io/buttons.js"></script>
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <script src="{{ site.url }}{{ site.baseurl }}/assets/js/shards.js?v=1.0.2"></script>
+      <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js?v=1.0.2"></script>
+      <script src="{{ site.url }}{{ site.baseurl }}/assets/js/simpleParallax.min.js"></script>
+      <script src="{{ site.url }}{{ site.baseurl }}/assets/js/popmotion.global.min.js"></script>
+      <script src="{{ site.url }}{{ site.baseurl }}/assets/js/prism.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>      
+      <script>$(document).ready(function() {
+          $('.simple-parallax').simpleParallax();
+          $('.simple-parallax-down').simpleParallax({scale: '1.20', orientation: 'down'});
+      });</script>
+    <!--Custom script loaded by children page-->
+    {% if page.js %}<script async src="{{ site.url }}{{ site.baseurl }}/assets/js/{{ page.js }}"></script>{% endif %}
+
+    {% if site.addthis %} <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="{{ site.addthis }}"></script>{% endif %}
+
+
+  </body>
+</html>
