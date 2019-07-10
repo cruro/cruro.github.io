@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: <b style='color :#007bff; font-weight:900!important;'>Jori</b><span>gamy</span>
+title: <b style='color :#007bff; font-weight:900!important;'>Cruro</b><span>Coin</span>
 email: jorigamy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Jorigamy is a porting of <a href="https://designrevision.com/download/shards" rel="nofollow">Shards UI toolkit</a> a bootstrap4 starter template intalled for Jekyll static website generator.
+  <a href="https://github.com/cruro/cruro" rel="nofollow">Cruro</a> is a new crypto based on Bitcoin core.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cruro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
